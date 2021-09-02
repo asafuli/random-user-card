@@ -1,0 +1,96 @@
+.header {
+  box-sizing: border-box;
+  margin-left: 20%;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.header::first-letter {
+  font-size: 3rem;
+}
+
+#user-title {
+  margin-top: 1em;
+  font-size: 0.75 rem;
+  font-weight: light;
+}
+
+#user-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-container {
+  border: 1px solid cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  max-width: 50vw;
+  min-height: 40vh;
+  background-color: azure;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  max-width: 40vw;
+  border-radius: 60px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+li {
+  background-image: url('./static/card_icons.png');
+  background-size: 378px;
+  width: 40px;
+  height: 48px;
+}
+
+li[data-label='name'] {
+  background-position: 0px -96px;
+}
+
+li[data-label='email'] {
+  background-position: -68px -96px;
+}
+
+li[data-label='password'] {
+  background-position: -338px -96px;
+}
+
+li[data-label='location'] {
+  background-position: -203px -96px;
+}
+
+li[data-label='userName'] {
+  background-position: -135px -96px;
+}
+
+li[data-label='profilePic'] {
+  background-position: -270px -96px;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+li.active {
+  background-position-y: -48px;
+  transition: all 0.4s ease-out;
+}
+
+.user-name {
+  border: 1px solid snow;
+  border-radius: 10%;
+  background-color: lightcyan;
+  margin-top: 1rem 0 0 1rem;
+  max-width: 10vw;
+}
+
+button {
+  margin: 2rem 2rem 2rem 2rem;
+}
